@@ -37,8 +37,8 @@ window.onload=function(){
 			pr.classList.add("sr")
 			pr.classList.remove("nsr")
 			sr.addEventListener("animationend",af)
-			ot.innerHTML=str
-			if (ot.innerHTML.length>38){ot.innerHTML=ot.innerHTML.substring(0,37)+"…"}
+			ot.innerText=str
+			if (ot.innerText.length>38){ot.innerText=ot.innerText.substring(0,37)+"…"}
 			var wg=[]
 			for (var d of DATA){
 				for (var s of str.split(" ")){
@@ -76,10 +76,10 @@ window.onload=function(){
 			if (wg.length==0){
 				var bg=document.createElement("div")
 				bg.classList.add("nb")
-				bg.innerHTML="Oops!"
+				bg.innerText="Oops!"
 				var sm=document.createElement("div")
 				sm.classList.add("ns")
-				sm.innerHTML=`Nothing relates to "${str}"`
+				sm.innerText=`Nothing relates to "${str}"`
 				pr.appendChild(bg)
 				pr.appendChild(sm)
 			}
